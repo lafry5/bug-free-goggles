@@ -1,6 +1,6 @@
 # Email Regex
 
-This is a tutorial that explains the matching an email regex.
+This is a tutorial that explains the regex for matching an email.
 
 ## Summary
 
@@ -25,15 +25,15 @@ The regex will confirm the exact email address of a non-space separated sequence
 The components of the regex are the sequences of characters, the brackets which signify matching anything between them, the forward slashes which are the boundaries of the expression, the plus which means to match as many times as possible, the @, the \., the $ which signifies the end, and the {2,6} which means to match at least two times but not more than 6. 
 
 ### Anchors
-/ regular expression boundary^ represents the beginning of the line or string
+/ regular expression boundary represents the beginning of the line or string
 $ represents the end of the string, or end of the line
 
 ### Quantifiers
-{2,6} means to match at least two times but not more than 6
+{2,6} means to match the characters at least two times but not more than 6
 
 ### OR Operator
 \. represents a literal period
-\  is the regular expression boundary 
+/  is the regular expression boundary 
 
 ### Character Classes
 [] the characters listed inside the brackets are part of a matching character set, in this case letters, numbers and characters before and after the @ and letters after the ".".

@@ -1,10 +1,11 @@
-# Title (replace with your title)
+# Email Regex
 
-Introductory paragraph (replace this with your text)
+This is a tutorial that explains the matching an email regex.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The regex will confirm the exact email address of a non-space separated sequence of characters of length greater than one, followed by an @, followed by a sequence of non-spaced characters of length one or more separated by a "." followed by a sequence of non-spaced characters of length two or more. The code is as follows:
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
@@ -21,6 +22,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
+The components of the regex are 
 
 ### Anchors
 

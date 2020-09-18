@@ -22,23 +22,24 @@ The regex will confirm the exact email address of a non-space separated sequence
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
-The components of the regex are the sequences of characters, the brackets which signify matching anything between them, the forward slashes which are the boundaries of the expression, the plus which means to match as many times as possible, the @, the \., the $ which signifies the end, and the {2,6} which means to match at least two times but not more than 6. 
+The components of the regex are the sequences of characters, the brackets which signify matching anything between them, the forward slashes which are the boundaries of the expression, the plus which means to match as many times as possible, the @, the \., the $ which signifies the end, and the {2,6} (quanitifer) which means to match at least two times but not more than 6. 
 
 ### Anchors
 / regular expression boundary represents the beginning of the line or string
-$ represents the end of the string, or end of the line
+$ represents the end of the string or the end of the line
+^ represents the beginning of the string or beginning of the line
 
 ### Quantifiers
-{2,6} means to match the characters at least two times but not more than 6
+{2,6} means to match the characters prior to it at least two times but not more than 6
 
 ### OR Operator
-\. represents a literal period (as seen above between the two capture groups)
-/  is the regular expression boundary at the beginning an end of the expression
+\. represents a literal period (as seen above between the two capture groups and inside the last capture group)
+
 
 ### Character Classes
 [] the characters listed inside the brackets are part of a matching character set, in this case letters, numbers and characters before and after the @ and letters after the ".". What it means is to match what is inside the []. In the instance of the first and second brackets, since there is a + afterwards, that means to match the letters, numbers and characters as many times as possible. 
 
-. represents any character
+The . is used in the expression in two instances to represent any character. The instances are inside the capture groups in parenthesis.
 
 ### Flags
 

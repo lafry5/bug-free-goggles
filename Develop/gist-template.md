@@ -42,7 +42,7 @@ $ represents the end of the string or the end of the line
 The . is used in the expression in two instances to represent any character. The instances are inside the capture groups in parenthesis.
 
 ### Flags
-
+Flags are identified at the end of the slash character to specify details about executing the expression. For example an i after the slash (i.e. "/i") represents insensitive and makes the whole expression case-insensitive...for instance /aBc/i would match AbC. There are no flags identified at the end of the regex expression for matching an email.  
 
 ### Grouping and Capturing
 A capture group is a section of a regular expression enclosed in parentheses. The first capture group is [a-z0-9_\.-]+ , the second capture group is [\da-z\.-]+ and the third capture group is [a-z\.]{2,6}

@@ -57,9 +57,13 @@ This regex is not using lazy quantifier. Quanitifers by their nature are greedy 
 (regular expressions info rf word boundaries)
 
 ### Back-references
+(Give a definition of what a back-reference does.) There are no back-references to previous capture groups.
 
 ### Look-ahead and Look-behind
+These are collectively called look-around. These are zero length assertions, just like the start and end of a line and word anchors. (Look in the reg expressions info)
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+The author has been a technical project manager for 15 years. She received her Bachelors in Mathematics from the University of Pittsburgh, a Masters in Electrical Engineering from USC and an MBA from the University of Phoenix. She is currently attending the University of Arizona  bootcamp for Full Stack Web Development.
+
+[Laura's GitHub profile](https://github.com/lafry5)

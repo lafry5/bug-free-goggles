@@ -32,15 +32,18 @@ $ represents the end of the string, or end of the line
 {2,6} means to match the characters at least two times but not more than 6
 
 ### OR Operator
-\. represents a literal period
-/  is the regular expression boundary 
+\. represents a literal period (as seen above between the two capture groups)
+/  is the regular expression boundary at the beginning an end of the expression
 
 ### Character Classes
-[] the characters listed inside the brackets are part of a matching character set, in this case letters, numbers and characters before and after the @ and letters after the ".".
+[] the characters listed inside the brackets are part of a matching character set, in this case letters, numbers and characters before and after the @ and letters after the ".". What it means is to match what is inside the []. In the instance of the first and second brackets, since there is a + afterwards, that means to match the letters, numbers and characters as many times as possible. 
+
+. represents any character
 
 ### Flags
 
 ### Grouping and Capturing
+A capture group is a section of a regular expression enclosed in parentheses. The first capture group is [a-z0-9_\.-]+ , the second capture group is [\da-z\.-]+ and the third capture group is [a-z\.]{2,6}
 
 ### Bracket Expressions
 

@@ -25,12 +25,12 @@ The regex will confirm the exact email address of a non-space separated sequence
 The components of the regex are the sequences of characters, the brackets which signify matching anything between them, the forward slashes which are the boundaries of the expression, the plus which means to match as many times as possible, the @, the \., the $ which signifies the end, and the {2,6} (quanitifer) which means to match at least two times but not more than 6. 
 
 ### Anchors
-/ regular expression boundary represents the beginning of the line or string
-$ represents the end of the string or the end of the line
+/ regular expression boundary represents the beginning and end of the line or string
 ^ represents the beginning of the string or beginning of the line
+$ represents the end of the string or the end of the line
 
 ### Quantifiers
-{2,6} means to match the characters prior to it at least two times but not more than 6
+{2,6} means to match the characters prior to it at least two times but not more than 6 times
 
 ### OR Operator
 \. represents a literal period (as seen above between the two capture groups and inside the last capture group)
@@ -57,7 +57,7 @@ This regex is not using lazy quantifier. Quanitifers by their nature are greedy 
 (regular expressions info rf word boundaries)
 
 ### Back-references
-(Give a definition of what a back-reference does.) There are no back-references to previous capture groups.
+Backreferences match the same text as previously matched by a capture group. For example, let's say there is another section in the regex that matches the first capture group i.e. [a-z0-9_\.-]+. Instead of re-writing that again later in the expression, instead, all you need to do is put \1 (backslash one) to reference the first capture group. \1 represents matching the exact same text that was in the first capture group. However, there are no back-references in this regex to reference previous capture groups so there are no back-references.
 
 ### Look-ahead and Look-behind
 These are collectively called look-around. These are zero length assertions, just like the start and end of a line and word anchors. (Look in the reg expressions info)

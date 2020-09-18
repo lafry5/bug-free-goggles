@@ -51,10 +51,10 @@ A capture group is a section of a regular expression enclosed in parentheses. Th
 The first bracket expression is [a-z0-9_\.-]. This represents letters a through z, numbers 0 through 9 and characters -, \, any character, and -.  The second bracket expression is [\da-z\.-]. This represents any digit, letters a through z, \, any character, and -. The third expression is [a-z\.], which is a through a and a ".".
 
 ### Greedy and Lazy Match
-This regex is not using a lazy quantifier. Quanitifers by their nature are greedy since they are trying to match the largest number of strings as possible. 
+This regex is not using a lazy quantifier. Quanitifers by their nature are greedy since they are trying to match the largest number of strings as possible. (See quanitifers above.) 
 
 ### Boundaries
-(regular expressions info rf word boundaries)
+A word boundary \b is a test, just like the anchors ^ and $. When the regexp engine comes across \b it checks that the position in the string is a word boundary (at string start, between two string characters, at string end). In this regex expression there are no defined word boundaries.
 
 ### Back-references
 Backreferences match the same text as previously matched by a capture group. For example, let's say there is another section in the regex that matches the first capture group i.e. [a-z0-9_\.-]+. Instead of re-writing that again later in the expression, instead, all you need to do is put \1 (backslash one) to reference the first capture group. \1 represents matching the exact same text that was in the first capture group. However, there are no back-references in this regex to reference previous capture groups so there are no back-references.

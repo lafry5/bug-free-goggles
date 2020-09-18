@@ -43,14 +43,18 @@ The . is used in the expression in two instances to represent any character. The
 
 ### Flags
 
+
 ### Grouping and Capturing
 A capture group is a section of a regular expression enclosed in parentheses. The first capture group is [a-z0-9_\.-]+ , the second capture group is [\da-z\.-]+ and the third capture group is [a-z\.]{2,6}
 
 ### Bracket Expressions
+The first bracket expression is [a-z0-9_\.-]. This represents letters a through z, numbers 0 through 9 and characters -, \, any character, and -.  The second bracket expression is [\da-z\.-]. This represents any digit, letters a through z, \, any character, and -. The third expression is [a-z\.], which is a through a and a ".".
 
 ### Greedy and Lazy Match
+This regex is not using lazy quantifier. Quanitifers by their nature are greedy since they are trying to match the largest number of strings as possible. 
 
 ### Boundaries
+(regular expressions info rf word boundaries)
 
 ### Back-references
 

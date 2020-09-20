@@ -30,10 +30,10 @@ The components of the regex are the sequences of characters, the brackets which 
 $ represents the end of the string or the end of the line
 
 ### Quantifiers
-{2,6} means to match the characters prior to it at least two times but not more than 6 times
+Quantifiers indicate numbers of characters or expressions to match. In the matching an email regex, {2,6} means to match the characters prior to it at least two times but not more than 6 times.
 
 ### OR Operator
-\. represents a literal period (as seen above between the two capture groups and inside the last capture group)
+The operator backslash period (i.e. "\.") represents a literal period (as seen above between the two capture groups and inside the last capture group).
 
 
 ### Character Classes
